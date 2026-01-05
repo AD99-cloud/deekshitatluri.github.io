@@ -38,10 +38,6 @@
           <a class="btn" href="https://github.com/AD99-CLOUD" target="_blank" rel="noreferrer">GitHub</a>
           <a class="btn" href="https://www.linkedin.com/in/deekshit-a-85ba93229" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
-
-        <p class="note">
-          Simple, organized portfolio — projects first, clarity always.
-        </p>
       </div>
 
       <div class="hero-right">
@@ -61,7 +57,6 @@
     <section id="projects" class="section">
       <div class="section-title">
         <h2>Projects</h2>
-        <p>Start with 1–2 strong projects. Add more later.</p>
       </div>
 
       <div class="grid">
@@ -79,13 +74,13 @@
             Built a local-first Retrieval-Augmented Generation (RAG) system over IT troubleshooting docs (.md/.txt)
             using FAISS vector search and SentenceTransformers embeddings. Exposed retrieval and Q&A as MCP tools
             (<code>search</code>, <code>fetch</code>, <code>answer_question</code>) via a FastMCP server (stdio)
-            for easy integration with clients/agents.
+            for integration with clients or agent workflows.
           </p>
 
           <ul class="project-bullets">
             <li>Chunking + indexing pipeline (<code>index_docs.py</code>) with metadata mapping</li>
-            <li>Semantic search + fetch + runbook-style answer formatting for actionable troubleshooting steps</li>
-            <li>MCP server (<code>mcp_server.py</code>) + test client validating end-to-end tool flow</li>
+            <li>Semantic search + fetch + runbook-style answer formatting for actionable troubleshooting</li>
+            <li>MCP server (<code>mcp_server.py</code>) with test client validating end-to-end flow</li>
           </ul>
 
           <div class="links">
@@ -100,7 +95,6 @@
     <section id="skills" class="section">
       <div class="section-title">
         <h2>Skills</h2>
-        <p>Grouped and easy to scan.</p>
       </div>
 
       <div class="grid two">
@@ -119,7 +113,7 @@
           <ul>
             <li>Trend/seasonality analysis, baseline shifts</li>
             <li>ARIMA-style forecasting concepts</li>
-            <li>Anomaly detection (practical approaches + monitoring mindset)</li>
+            <li>Anomaly detection for operational data</li>
           </ul>
         </div>
 
@@ -127,9 +121,9 @@
           <h3>NLP & GenAI</h3>
           <ul>
             <li>RAG systems: chunking, embeddings, retrieval</li>
-            <li>BERT/SentenceTransformers embeddings</li>
+            <li>BERT / SentenceTransformers embeddings</li>
             <li>GPT-based workflows, prompt design</li>
-            <li>Tooling: LangChain (and MCP-style tool interfaces)</li>
+            <li>LangChain, MCP-style tool interfaces</li>
           </ul>
         </div>
 
@@ -137,8 +131,8 @@
           <h3>Data & Engineering</h3>
           <ul>
             <li>Python, SQL</li>
-            <li>Snowflake (analytics + pipelines)</li>
-            <li>Azure ML (experimentation & deployment workflows)</li>
+            <li>Snowflake (analytics & pipelines)</li>
+            <li>Azure ML (experimentation & deployment)</li>
             <li>Git/GitHub, reproducible environments</li>
           </ul>
         </div>
@@ -149,13 +143,12 @@
     <section id="resume" class="section">
       <div class="section-title">
         <h2>Resume</h2>
-        <p>Add your PDF and make it one click.</p>
       </div>
 
       <div class="card resume">
-        <p>Download my resume:</p>
-        <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
-        <p class="note">Place your PDF at <code>assets/resume.pdf</code>.</p>
+        <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">
+          Download Resume (PDF)
+        </a>
       </div>
     </section>
 
@@ -163,26 +156,20 @@
     <section id="contact" class="section">
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Make it effortless to reach you.</p>
       </div>
 
       <div class="card">
         <ul class="contact">
-          <li><strong>Email:</strong> <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></li>
+          <li><strong>Email:</strong> <a href="mailto:deekshitatluri999@gmail.com">deekshitatluri999@gmail.com</a></li>
           <li><strong>GitHub:</strong> <a href="https://github.com/AD99-CLOUD" target="_blank" rel="noreferrer">github.com/AD99-CLOUD</a></li>
           <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deekshit-a-85ba93229" target="_blank" rel="noreferrer">linkedin.com/in/deekshit-a-85ba93229</a></li>
         </ul>
-        <p class="note">Replace the email above with your real email.</p>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Deekshit Atluri • Built with GitHub Pages</p>
+      <p>Deekshit Atluri • Portfolio</p>
     </footer>
   </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

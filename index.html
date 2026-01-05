@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Deekshit Atluri | Portfolio</title>
-  <meta name="description" content="AI/ML Engineer portfolio – projects, skills, resume, and links." />
+  <meta name="description" content="Data Scientist portfolio – projects, skills, resume, and links." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -26,22 +26,21 @@
   <main id="home" class="container">
     <section class="hero">
       <div class="hero-left">
-        <p class="badge">AI / ML Engineer • Local-first AI systems</p>
-        <h1>Building reliable AI tools that solve real operational problems.</h1>
+        <p class="badge">Data Scientist • ML • Analytics • AI</p>
+        <h1>Turning data into models, insights, and usable AI systems.</h1>
         <p class="subhead">
-          I build practical AI systems (RAG, embeddings, tool APIs) with a focus on usability,
-          reliability, and clean engineering.
+          I work across predictive modeling (supervised/unsupervised), time series, and modern NLP (RAG/LLMs),
+          with strong hands-on delivery using Python, SQL, Snowflake, and Azure ML.
         </p>
 
         <div class="cta">
-          <!-- TODO: Replace links -->
           <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="https://github.com/deekshitatluri" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/AD99-CLOUD" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/deekshit-a-85ba93229" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
 
         <p class="note">
-          Tip: Keep this page simple and let your projects + README do the talking.
+          Simple, organized portfolio — projects first, clarity always.
         </p>
       </div>
 
@@ -49,9 +48,10 @@
         <div class="card">
           <h3>Current Focus</h3>
           <ul>
-            <li>IT-focused RAG systems (FAISS + embeddings)</li>
-            <li>MCP tool servers for agent/client integration</li>
-            <li>Clean, reproducible AI project structure</li>
+            <li>Predictive modeling: regression, classification, tree-based methods</li>
+            <li>Time series: forecasting & anomaly detection (ARIMA-style approaches)</li>
+            <li>NLP & GenAI: RAG, BERT-style embeddings, GPT workflows</li>
+            <li>Strong delivery stack: Python, SQL, Snowflake, Azure ML</li>
           </ul>
         </div>
       </div>
@@ -71,29 +71,28 @@
             <p class="pill">Python</p>
             <p class="pill">FAISS</p>
             <p class="pill">SentenceTransformers</p>
+            <p class="pill">RAG</p>
             <p class="pill">MCP</p>
           </div>
 
           <p class="project-desc">
-            Built a local-first RAG system over IT troubleshooting docs (.md/.txt) using FAISS vector search and
-            SentenceTransformers embeddings. Exposed retrieval and Q&A as MCP tools (search/fetch/answer_question)
-            via a FastMCP server for easy integration with clients/agents.
+            Built a local-first Retrieval-Augmented Generation (RAG) system over IT troubleshooting docs (.md/.txt)
+            using FAISS vector search and SentenceTransformers embeddings. Exposed retrieval and Q&A as MCP tools
+            (<code>search</code>, <code>fetch</code>, <code>answer_question</code>) via a FastMCP server (stdio)
+            for easy integration with clients/agents.
           </p>
 
           <ul class="project-bullets">
             <li>Chunking + indexing pipeline (<code>index_docs.py</code>) with metadata mapping</li>
-            <li>Semantic search + fetch + runbook-style answer formatting</li>
-            <li>MCP server (stdio) + test client validating end-to-end tool flow</li>
+            <li>Semantic search + fetch + runbook-style answer formatting for actionable troubleshooting steps</li>
+            <li>MCP server (<code>mcp_server.py</code>) + test client validating end-to-end tool flow</li>
           </ul>
 
           <div class="links">
-            <!-- TODO: Replace with your actual repo link -->
-            <a class="link" href="https://github.com/deekshitatluri/YOUR-RAG-REPO" target="_blank" rel="noreferrer">GitHub Repo →</a>
-            <a class="link" href="https://github.com/deekshitatluri/YOUR-RAG-REPO#readme" target="_blank" rel="noreferrer">README →</a>
+            <a class="link" href="https://github.com/AD99-CLOUD/IT-RAG-ASSISTANT" target="_blank" rel="noreferrer">GitHub Repo →</a>
+            <a class="link" href="https://github.com/AD99-CLOUD/IT-RAG-ASSISTANT#readme" target="_blank" rel="noreferrer">README →</a>
           </div>
         </article>
-
-        <!-- Add more projects later by copying the <article class="project"> block -->
       </div>
     </section>
 
@@ -101,24 +100,45 @@
     <section id="skills" class="section">
       <div class="section-title">
         <h2>Skills</h2>
-        <p>Keep it grouped and easy to scan.</p>
+        <p>Grouped and easy to scan.</p>
       </div>
 
       <div class="grid two">
         <div class="card">
-          <h3>AI / ML</h3>
+          <h3>Machine Learning & Statistics</h3>
           <ul>
-            <li>RAG systems, embeddings, vector search</li>
-            <li>SentenceTransformers, prompt design</li>
-            <li>Evaluation basics (recall@k, grounded answers)</li>
+            <li>Supervised learning: regression & classification</li>
+            <li>Tree-based models: Random Forest, XGBoost</li>
+            <li>Unsupervised learning: clustering, similarity search</li>
+            <li>Model evaluation: metrics, validation, bias/variance mindset</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Engineering</h3>
+          <h3>Time Series & Forecasting</h3>
           <ul>
-            <li>Python, CLI tooling, clean project structure</li>
-            <li>MCP tool servers (FastMCP), APIs</li>
+            <li>Trend/seasonality analysis, baseline shifts</li>
+            <li>ARIMA-style forecasting concepts</li>
+            <li>Anomaly detection (practical approaches + monitoring mindset)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>NLP & GenAI</h3>
+          <ul>
+            <li>RAG systems: chunking, embeddings, retrieval</li>
+            <li>BERT/SentenceTransformers embeddings</li>
+            <li>GPT-based workflows, prompt design</li>
+            <li>Tooling: LangChain (and MCP-style tool interfaces)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Data & Engineering</h3>
+          <ul>
+            <li>Python, SQL</li>
+            <li>Snowflake (analytics + pipelines)</li>
+            <li>Azure ML (experimentation & deployment workflows)</li>
             <li>Git/GitHub, reproducible environments</li>
           </ul>
         </div>
@@ -133,10 +153,7 @@
       </div>
 
       <div class="card resume">
-        <p>
-          Download my resume:
-        </p>
-        <!-- After you add assets/resume.pdf, this will work -->
+        <p>Download my resume:</p>
         <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
         <p class="note">Place your PDF at <code>assets/resume.pdf</code>.</p>
       </div>
@@ -152,5 +169,20 @@
       <div class="card">
         <ul class="contact">
           <li><strong>Email:</strong> <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/deekshitatluri" target="_blank" rel="noreferrer">github.com/deekshitatluri</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.l
+          <li><strong>GitHub:</strong> <a href="https://github.com/AD99-CLOUD" target="_blank" rel="noreferrer">github.com/AD99-CLOUD</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deekshit-a-85ba93229" target="_blank" rel="noreferrer">linkedin.com/in/deekshit-a-85ba93229</a></li>
+        </ul>
+        <p class="note">Replace the email above with your real email.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Deekshit Atluri • Built with GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

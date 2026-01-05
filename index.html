@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <!-- Top Nav -->
+  <!-- Top Navigation -->
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="#home">Deekshit Atluri</a>
@@ -22,15 +22,17 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <main id="home" class="container">
+
+    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-left">
         <p class="badge">Data Scientist • ML • Analytics • AI</p>
         <h1>Turning data into models, insights, and usable AI systems.</h1>
         <p class="subhead">
-          I work across predictive modeling (supervised/unsupervised), time series, and modern NLP (RAG/LLMs),
-          with strong hands-on delivery using Python, SQL, Snowflake, and Azure ML.
+          I work across predictive modeling (supervised/unsupervised), time series analysis,
+          and modern NLP (RAG/LLMs), with hands-on delivery using Python, SQL, Snowflake,
+          and Azure ML.
         </p>
 
         <div class="cta">
@@ -45,53 +47,89 @@
           <h3>Current Focus</h3>
           <ul>
             <li>Predictive modeling: regression, classification, tree-based methods</li>
-            <li>Time series: forecasting & anomaly detection (ARIMA-style approaches)</li>
-            <li>NLP & GenAI: RAG, BERT-style embeddings, GPT workflows</li>
-            <li>Strong delivery stack: Python, SQL, Snowflake, Azure ML</li>
+            <li>Time series: forecasting & anomaly detection (ARIMA-style)</li>
+            <li>NLP & GenAI: RAG, BERT embeddings, GPT workflows</li>
+            <li>Python, SQL, Snowflake, Azure ML</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
       <div class="section-title">
         <h2>Projects</h2>
       </div>
 
       <div class="grid">
+
+        <!-- Project 1: IT RAG -->
         <article class="project">
           <div class="project-top">
             <h3>Local IT RAG Assistant (FAISS + MCP)</h3>
             <p class="pill">Python</p>
             <p class="pill">FAISS</p>
-            <p class="pill">SentenceTransformers</p>
             <p class="pill">RAG</p>
+            <p class="pill">NLP</p>
             <p class="pill">MCP</p>
           </div>
 
           <p class="project-desc">
-            Built a local-first Retrieval-Augmented Generation (RAG) system over IT troubleshooting docs (.md/.txt)
-            using FAISS vector search and SentenceTransformers embeddings. Exposed retrieval and Q&A as MCP tools
-            (<code>search</code>, <code>fetch</code>, <code>answer_question</code>) via a FastMCP server (stdio)
-            for integration with clients or agent workflows.
+            Built a local-first Retrieval-Augmented Generation (RAG) system over IT troubleshooting
+            documentation using FAISS vector search and SentenceTransformers embeddings.
+            Exposed semantic search and Q&A as MCP tools for reliable, grounded answers.
           </p>
 
           <ul class="project-bullets">
-            <li>Chunking + indexing pipeline (<code>index_docs.py</code>) with metadata mapping</li>
-            <li>Semantic search + fetch + runbook-style answer formatting for actionable troubleshooting</li>
-            <li>MCP server (<code>mcp_server.py</code>) with test client validating end-to-end flow</li>
+            <li>Chunking and indexing pipeline for markdown/text runbooks</li>
+            <li>Semantic retrieval with source-backed, runbook-style answers</li>
+            <li>MCP server with end-to-end test client validation</li>
           </ul>
 
           <div class="links">
-            <a class="link" href="https://github.com/AD99-CLOUD/IT-RAG-ASSISTANT" target="_blank" rel="noreferrer">GitHub Repo →</a>
-            <a class="link" href="https://github.com/AD99-CLOUD/IT-RAG-ASSISTANT#readme" target="_blank" rel="noreferrer">README →</a>
+            <a class="link" href="https://github.com/AD99-CLOUD/IT-RAG-ASSISTANT" target="_blank" rel="noreferrer">
+              GitHub Repo →
+            </a>
+            <a class="link" href="https://github.com/AD99-CLOUD/IT-RAG-ASSISTANT#readme" target="_blank" rel="noreferrer">
+              README →
+            </a>
           </div>
         </article>
+
+        <!-- Project 2: Polyp Detection -->
+        <article class="project">
+          <div class="project-top">
+            <h3>Medical Image Segmentation & Detection (Polyp Analysis)</h3>
+            <p class="pill">Python</p>
+            <p class="pill">Computer Vision</p>
+            <p class="pill">Deep Learning</p>
+            <p class="pill">YOLO</p>
+            <p class="pill">ViT</p>
+          </div>
+
+          <p class="project-desc">
+            Developed deep learning models for medical image analysis focused on polyp detection
+            and segmentation from endoscopic imagery. Implemented and experimented with
+            YOLO-based detection models, Vision Transformers (ViT), and segmentation approaches.
+          </p>
+
+          <ul class="project-bullets">
+            <li>Image preprocessing, dataset splitting, and training pipelines</li>
+            <li>Object detection and segmentation model experimentation</li>
+            <li>Hands-on work with architecture design, inference, and evaluation</li>
+          </ul>
+
+          <div class="links">
+            <a class="link" href="https://github.com/AD99-cloud/Polyp-full-model" target="_blank" rel="noreferrer">
+              GitHub Repo →
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills" class="section">
       <div class="section-title">
         <h2>Skills</h2>
@@ -101,29 +139,29 @@
         <div class="card">
           <h3>Machine Learning & Statistics</h3>
           <ul>
-            <li>Supervised learning: regression & classification</li>
-            <li>Tree-based models: Random Forest, XGBoost</li>
-            <li>Unsupervised learning: clustering, similarity search</li>
-            <li>Model evaluation: metrics, validation, bias/variance mindset</li>
+            <li>Regression, classification, supervised learning</li>
+            <li>Random Forest, XGBoost</li>
+            <li>Unsupervised learning and similarity methods</li>
+            <li>Model evaluation and validation</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Time Series & Forecasting</h3>
+          <h3>Time Series</h3>
           <ul>
-            <li>Trend/seasonality analysis, baseline shifts</li>
-            <li>ARIMA-style forecasting concepts</li>
-            <li>Anomaly detection for operational data</li>
+            <li>Trend and seasonality analysis</li>
+            <li>ARIMA-style forecasting</li>
+            <li>Anomaly detection</li>
           </ul>
         </div>
 
         <div class="card">
           <h3>NLP & GenAI</h3>
           <ul>
-            <li>RAG systems: chunking, embeddings, retrieval</li>
-            <li>BERT / SentenceTransformers embeddings</li>
-            <li>GPT-based workflows, prompt design</li>
-            <li>LangChain, MCP-style tool interfaces</li>
+            <li>RAG pipelines and embeddings</li>
+            <li>BERT / SentenceTransformers</li>
+            <li>GPT-based workflows</li>
+            <li>LangChain, MCP tooling</li>
           </ul>
         </div>
 
@@ -131,15 +169,15 @@
           <h3>Data & Engineering</h3>
           <ul>
             <li>Python, SQL</li>
-            <li>Snowflake (analytics & pipelines)</li>
-            <li>Azure ML (experimentation & deployment)</li>
-            <li>Git/GitHub, reproducible environments</li>
+            <li>Snowflake</li>
+            <li>Azure ML</li>
+            <li>Git & GitHub</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Resume -->
+    <!-- Resume Section -->
     <section id="resume" class="section">
       <div class="section-title">
         <h2>Resume</h2>
@@ -152,7 +190,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="section">
       <div class="section-title">
         <h2>Contact</h2>
@@ -160,9 +198,10 @@
 
       <div class="card">
         <ul class="contact">
-          <li><strong>Email:</strong> <a href="mailto:deekshitatluri999@gmail.com">deekshitatluri999@gmail.com</a></li>
+          <li><strong>Email:</strong> <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></li>
           <li><strong>GitHub:</strong> <a href="https://github.com/AD99-CLOUD" target="_blank" rel="noreferrer">github.com/AD99-CLOUD</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deekshit-a-85ba93229" target="_blank" rel="noreferrer">linkedin.com/in/deekshit-a-85ba93229</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deekshit-a-85ba93229" target="_blank" rel="noreferrer">
+            linkedin.com/in/deekshit-a-85ba93229</a></li>
         </ul>
       </div>
     </section>
@@ -170,6 +209,7 @@
     <footer class="footer">
       <p>Deekshit Atluri • Portfolio</p>
     </footer>
+
   </main>
 </body>
 </html>

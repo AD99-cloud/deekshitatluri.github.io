@@ -1,11 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Your Name | Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deekshit Atluri | Portfolio</title>
+  <meta name="description" content="AI/ML Engineer portfolio – projects, skills, resume, and links." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Hello 👋</h1>
-  <p>My portfolio site is coming soon.</p>
-</body>
-</html>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Deekshit Atluri</a>
+      <nav class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="badge">AI / ML Engineer • Local-first AI systems</p>
+        <h1>Building reliable AI tools that solve real operational problems.</h1>
+        <p class="subhead">
+          I build practical AI systems (RAG, embeddings, tool APIs) with a focus on usability,
+          reliability, and clean engineering.
+        </p>
+
+        <div class="cta">
+          <!-- TODO: Replace links -->
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://github.com/deekshitatluri" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <p class="note">
+          Tip: Keep this page simple and let your projects + README do the talking.
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <div class="card">
+          <h3>Current Focus</h3>
+          <ul>
+            <li>IT-focused RAG systems (FAISS + embeddings)</li>
+            <li>MCP tool servers for agent/client integration</li>
+            <li>Clean, reproducible AI project structure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Start with 1–2 strong projects. Add more later.</p>
+      </div>
+
+      <div class="grid">
+        <article class="project">
+          <div class="project-top">
+            <h3>Local IT RAG Assistant (FAISS + MCP)</h3>
+            <p class="pill">Python</p>
+            <p class="pill">FAISS</p>
+            <p class="pill">SentenceTransformers</p>
+            <p class="pill">MCP</p>
+          </div>
+
+          <p class="project-desc">
+            Built a local-first RAG system over IT troubleshooting docs (.md/.txt) using FAISS vector search and
+            SentenceTransformers embeddings. Exposed retrieval and Q&A as MCP tools (search/fetch/answer_question)
+            via a FastMCP server for easy integration with clients/agents.
+          </p>
+
+          <ul class="project-bullets">
+            <li>Chunking + indexing pipeline (<code>index_docs.py</code>) with metadata mapping</li>
+            <li>Semantic search + fetch + runbook-style answer formatting</li>
+            <li>MCP server (stdio) + test client validating end-to-end tool flow</li>
+          </ul>
+
+          <div class="links">
+            <!-- TODO: Replace with your actual repo link -->
+            <a class="link" href="https://github.com/deekshitatluri/YOUR-RAG-REPO" target="_blank" rel="noreferrer">GitHub Repo →</a>
+            <a class="link" href="https://github.com/deekshitatluri/YOUR-RAG-REPO#readme" target="_blank" rel="noreferrer">README →</a>
+          </div>
+        </article>
+
+        <!-- Add more projects later by copying the <article class="project"> block -->
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>Keep it grouped and easy to scan.</p>
+      </div>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>AI / ML</h3>
+          <ul>
+            <li>RAG systems, embeddings, vector search</li>
+            <li>SentenceTransformers, prompt design</li>
+            <li>Evaluation basics (recall@k, grounded answers)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Engineering</h3>
+          <ul>
+            <li>Python, CLI tooling, clean project structure</li>
+            <li>MCP tool servers (FastMCP), APIs</li>
+            <li>Git/GitHub, reproducible environments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Add your PDF and make it one click.</p>
+      </div>
+
+      <div class="card resume">
+        <p>
+          Download my resume:
+        </p>
+        <!-- After you add assets/resume.pdf, this will work -->
+        <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
+        <p class="note">Place your PDF at <code>assets/resume.pdf</code>.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Make it effortless to reach you.</p>
+      </div>
+
+      <div class="card">
+        <ul class="contact">
+          <li><strong>Email:</strong> <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/deekshitatluri" target="_blank" rel="noreferrer">github.com/deekshitatluri</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.l
